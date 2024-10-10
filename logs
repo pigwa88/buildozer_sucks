@@ -1,0 +1,328 @@
+[INFO]:    Building pyjnius for armeabi-v7a
+[INFO]:    jnius apparently isn't already in site-packages                                                            
+[INFO]:    Cythonizing anything necessary in pyjnius                                                                  
+[DEBUG]:   Create directory /home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/pyjnius-sdl2/ar
+meabi-v7a__ndk_target_21/objects_pyjnius                                                                              
+[INFO]:    -> directory context /home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/pyjnius-sdl
+2/armeabi-v7a__ndk_target_21/pyjnius
+[DEBUG]:   -> running python3 -c import sys; print(sys.path)
+[DEBUG]:          ['', '/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop
+/hostpython3/native-build/Lib', '/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython
+3/desktop/hostpython3/native-build/Lib/site-packages', '/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/
+other_builds/hostpython3/desktop/hostpython3/native-build/build/temp.linux-x86_64-3.11', '/home/bgl/.buildozer/android
+/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/build/lib.linux-x86_64-3.1
+1', '/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native
+-build/build/scripts-3.11', '/usr/local/lib/python311.zip', '/home/bgl/.buildozer/android/platform/build-armeabi-v7a/b
+uild/other_builds/hostpython3/desktop/hostpython3/Lib']                                                               
+[DEBUG]:   cwd is /home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a_
+_ndk_target_21/pyjnius                                                                                                
+[INFO]:    Trying first build of pyjnius to get cython files: this is expected to fail                                
+[DEBUG]:   -> running python3 setup.py build_ext -v                                                                   
+[DEBUG]:          warning: [options] bootstrap class path not set in conjunction with -source 8                       
+[DEBUG]:          warning: [options] source value 8 is obsolete and will be removed in a future release               
+[DEBUG]:          warning: [options] target value 8 is obsolete and will be removed in a future release               
+[DEBUG]:          warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.                
+[DEBUG]:          4 warnings                                                                                          
+[DEBUG]:          running build_ext                                                                                   
+[DEBUG]:          building 'jnius' extension                                                                          
+[DEBUG]:          creating build                                                                                      
+[DEBUG]:          creating build/temp.linux-x86_64-3.11                                                               
+[DEBUG]:          creating build/temp.linux-x86_64-3.11/jnius                                                         
+[DEBUG]:          /home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/cla
+ng -target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -mthumb -fPIC -
+Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mf
+loat-abi=softfp -mfpu=vfp -mthumb -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/p
+ython3/armeabi-v7a__ndk_target_21/python3/Include -DANDROID -I/home/bgl/.buildozer/android/platform/android-ndk-r25b/t
+oolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/bui
+ld/python-installs/mykivyapp/armeabi-v7a/include/python3.1 -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi
+-v7a/build/other_builds/hostpython3/desktop/hostpython3/Include -I/home/bgl/.buildozer/android/platform/build-armeabi-
+v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build -c jnius/jnius.c -o build/temp.linux-x86_64-3.11/j
+nius/jnius.o                                                                                                          
+[DEBUG]:          clang-14: error: no such file or directory: 'jnius/jnius.c'                                         
+[DEBUG]:          clang-14: error: no input files                                                                     
+[DEBUG]:          error: command '/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linu
+x-x86_64/bin/clang' failed with exit code 1                                                                           
+Exception in thread background thread for pid 413351:                                                                 
+Traceback (most recent call last):                                                                                    
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner                                             
+    self.run()                                                                                                        
+  File "/usr/lib/python3.12/threading.py", line 1010, in run                                                          
+    self._target(*self._args, **self._kwargs)                                                                         
+  File "/home/bgl/kivy_env/lib/python3.12/site-packages/sh.py", line 1641, in wrap                                    
+    fn(*rgs, **kwargs)                                                                                                
+  File "/home/bgl/kivy_env/lib/python3.12/site-packages/sh.py", line 2569, in background_thread                       
+    handle_exit_code(exit_code)                                                                                       
+  File "/home/bgl/kivy_env/lib/python3.12/site-packages/sh.py", line 2269, in fn                                      
+    return self.command.handle_command_exit_code(exit_code)                                                           
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                           
+  File "/home/bgl/kivy_env/lib/python3.12/site-packages/sh.py", line 869, in handle_command_exit_code                 
+    raise exc                                                                                                         
+sh.ErrorReturnCode_1:                                                                                                 
+                                                                                                                      
+  RAN: /home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/nati
+ve-build/python3 setup.py build_ext -v                                                                                
+                                                                                                                      
+  STDOUT:                                                                                                             
+warning: [options] bootstrap class path not set in conjunction with -source 8                                         
+warning: [options] source value 8 is obsolete and will be removed in a future release                                 
+warning: [options] target value 8 is obsolete and will be removed in a future release                                 
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.                                  
+4 warnings                                                                                                            
+running build_ext                                                                                                     
+building 'jnius' extension                                                                                            
+creating build                                                                                                        
+creating build/temp.linux-x86_64-3.11                                                                                 
+creating build/temp.linux-x86_64-3.11/jnius                                                                           
+/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target armv7a-
+linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -mthumb -fPIC -Wsign-compare -DND
+EBUG -g -fwrapv -O3 -Wall -target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -m
+fpu=vfp -mthumb -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3/armeabi-v7a
+__ndk_target_21/python3/Include -DANDROID -I/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/pre
+built/linux-x86_64/sysroot/usr/include -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/python-installs
+/mykivyapp/armeabi-v7a/include/python3.1 -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_b
+uilds/hostpython3/desktop/hostpython3/Include -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_bu
+ilds/hostpython3/desktop/hostpython3/native-build -c jnius/jnius.c -o build/temp.linux-x86_64-3.11/jnius/jnius.o      
+clang-14: error: no such file or directory: 'jnius/jnius.c'                                                           
+clang-14: error: no input files                                                                                       
+error: command '/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+' failed with exit code 1                                                                                             
+                                                                                                                      
+                                                                                                                      
+  STDERR:                                                                                                             
+                                                                                                                      
+[INFO]:    pyjnius first build failed (as expected)                                                                   
+[INFO]:    Running cython where appropriate                                                                           
+[INFO]:    Cythonize jnius/jnius.pyx                                                                                  
+[DEBUG]:   -> running python3 -cimport sys; from Cython.Compiler.Main import setuptools_main; sys.exit(setuptools_main
+()); ./jnius/jnius.pyx                                                                                                
+[DEBUG]:          /home/bgl/kivy_env/lib/python3.12/site-packages/Cython/Compiler/Main.py:369: FutureWarning: Cython d
+irective 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: /home/bgl/.buildo
+zer/android/platform/build-armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius/jnius/jnius.
+pyx                                                                                                                   
+[DEBUG]:            tree = Parsing.p_module(s, pxd, full_module_name)                                                 
+[DEBUG]:   -> running python3 setup.py build_ext -v                                                                   
+[DEBUG]:          warning: [options] bootstrap class path not set in conjunction with -source 8                       
+[DEBUG]:          warning: [options] source value 8 is obsolete and will be removed in a future release               
+[DEBUG]:          warning: [options] target value 8 is obsolete and will be removed in a future release               
+[DEBUG]:          warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.                
+[DEBUG]:          4 warnings                                                                                          
+[DEBUG]:          running build_ext                                                                                   
+[DEBUG]:          building 'jnius' extension                                                                          
+[DEBUG]:          /home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/cla
+ng -target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -mthumb -fPIC -
+Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mf
+loat-abi=softfp -mfpu=vfp -mthumb -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/p
+ython3/armeabi-v7a__ndk_target_21/python3/Include -DANDROID -I/home/bgl/.buildozer/android/platform/android-ndk-r25b/t
+oolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/bui
+ld/python-installs/mykivyapp/armeabi-v7a/include/python3.1 -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi
+-v7a/build/other_builds/hostpython3/desktop/hostpython3/Include -I/home/bgl/.buildozer/android/platform/build-armeabi-
+v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build -c jnius/jnius.c -o build/temp.linux-x86_64-3.11/j
+nius/jnius.o                                                                                                          
+[DEBUG]:          jnius/jnius.c:196:12: fatal error: 'longintrepr.h' file not found                                   
+[DEBUG]:            #include "longintrepr.h"                                                                          
+[DEBUG]:                     ^~~~~~~~~~~~~~~                                                                          
+[DEBUG]:          1 error generated.                                                                                  
+[DEBUG]:          error: command '/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linu
+x-x86_64/bin/clang' failed with exit code 1                                                                           
+Exception in thread background thread for pid 413398:                                                                 
+Traceback (most recent call last):                                                                                    
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner                                             
+    self.run()                                                                                                        
+  File "/usr/lib/python3.12/threading.py", line 1010, in run                                                          
+    self._target(*self._args, **self._kwargs)                                                                         
+  File "/home/bgl/kivy_env/lib/python3.12/site-packages/sh.py", line 1641, in wrap                                    
+    fn(*rgs, **kwargs)                                                                                                
+  File "/home/bgl/kivy_env/lib/python3.12/site-packages/sh.py", line 2569, in background_thread                       
+    handle_exit_code(exit_code)                                                                                       
+  File "/home/bgl/kivy_env/lib/python3.12/site-packages/sh.py", line 2269, in fn                                      
+    return self.command.handle_command_exit_code(exit_code)                                                           
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                           
+  File "/home/bgl/kivy_env/lib/python3.12/site-packages/sh.py", line 869, in handle_command_exit_code                 
+    raise exc                                                                                                         
+sh.ErrorReturnCode_1:                                                                                                 
+                                                                                                                      
+  RAN: /home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/nati
+ve-build/python3 setup.py build_ext -v                                                                                
+                                                                                                                      
+  STDOUT:                                                                                                             
+warning: [options] bootstrap class path not set in conjunction with -source 8                                         
+warning: [options] source value 8 is obsolete and will be removed in a future release                                 
+warning: [options] target value 8 is obsolete and will be removed in a future release                                 
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.                                  
+4 warnings                                                                                                            
+running build_ext                                                                                                     
+building 'jnius' extension                                                                                            
+/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target armv7a-
+linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -mthumb -fPIC -Wsign-compare -DND
+EBUG -g -fwrapv -O3 -Wall -target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -m
+fpu=vfp -mthumb -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3/armeabi-v7a
+__ndk_target_21/python3/Include -DANDROID -I/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/pre
+built/linux-x86_64/sysroot/usr/include -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/python-installs
+/mykivyapp/armeabi-v7a/include/python3.1 -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_b
+uilds/hostpython3/desktop/hostpython3/Include -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_bu
+ilds/hostpython3/desktop/hostpython3/native-build -c jnius/jnius.c -o build/temp.linux-x86_64-3.11/jnius/jnius.o      
+jnius/jnius.c:196:12: fatal error: 'longintrepr.h' file not found                                                     
+  #include "longintrepr.h"                                                                                            
+           ^~~~~~~~~~~~~~~                                                                                            
+1 error generated.                                                                                                    
+error: command '/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+' failed with exit code 1                                                                                             
+                                                                                                                      
+                                                                                                                      
+  STDERR:                                                                                                             
+                                                                                                                      
+[INFO]:    STDOUT:                                                                                                    
+    warning: [options] bootstrap class path not set in conjunction with -source 8   
+warning: [options] source value 8 is obsolete and will be removed in a future release   
+warning: [options] target value 8 is obsolete and will be removed in a future release   
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.    
+4 warnings      
+running build_ext       
+building 'jnius' extension      
+/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target armv7a-
+linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -mthumb -fPIC -Wsign-compare -DND
+EBUG -g -fwrapv -O3 -Wall -target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -m
+fpu=vfp -mthumb -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3/armeabi-v7a
+__ndk_target_21/python3/Include -DANDROID -I/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/pre
+built/linux-x86_64/sysroot/usr/include -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/python-installs
+/mykivyapp/armeabi-v7a/include/python3.1 -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_b
+uilds/hostpython3/desktop/hostpython3/Include -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_bu
+ilds/hostpython3/desktop/hostpython3/native-build -c jnius/jnius.c -o build/temp.linux-x86_64-3.11/jnius/jnius.o      
+  
+jnius/jnius.c:196:12: fatal error: 'longintrepr.h' file not found       
+  #include "longintrepr.h"      
+           ^~~~~~~~~~~~~~~      
+1 error generated.      
+error: command '/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+' failed with exit code 1
+[INFO]:    STDERR:
+    
+[INFO]:    ENV:
+export HOME='/home/bgl'                                                                                               
+export CFLAGS='-target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -mt
+humb -fPIC -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3/armeabi-v7a__ndk_targe
+t_21/python3/Include'                                                                                                 
+export CXXFLAGS='-target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -
+mthumb -fPIC'                                                                                                         
+export CPPFLAGS='-DANDROID -I/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86
+_64/sysroot/usr/include -I/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/mykivyapp/arme
+abi-v7a/include/python3.1'                                                                                            
+export LDFLAGS='  -L/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/libs_collections/mykivyapp/armeabi-v
+7a -L/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/python3/armeabi-v7a__ndk_target_21/pyt
+hon3/android-build -lpython3.11 -L/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/libs_collections/mykiv
+yapp/armeabi-v7a -L/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/libs_collections/mykivyapp  -L/home/b
+gl/.buildozer/android/platform/build-armeabi-v7a/build/bootstrap_builds/sdl2/obj/local/armeabi-v7a '                  
+export LDLIBS='-lm'                                                                                                   
+export PATH='/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin:/home/bg
+l/.buildozer/android/platform/android-ndk-r25b:/home/bgl/.buildozer/android/platform/android-sdk/tools:/home/bgl/.buil
+dozer/android/platform/apache-ant-1.9.4/bin:/home/bgl/kivy_env/bin:/home/bgl/.local/bin:/home/bgl/bin:/usr/local/sbin:
+/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bgl/.buildozer/android/platfo
+rm/android-sdk/tools:/home/bgl/.buildozer/android/platform/android-sdk/platform-tools'                                
+export CC='/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -tar
+get armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -mthumb -fPIC'        
+export CXX='/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -
+target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -mthumb -fPIC'     
+export AR='/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar'  
+export RANLIB='/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-r
+anlib'                                                                                                                
+export STRIP='/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-st
+rip --strip-unneeded'                                                                                                 
+export READELF='/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-
+readelf'                                                                                                              
+export OBJCOPY='/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-
+objcopy'                                                                                                              
+export MAKE='make -j12'                                                                                               
+export ARCH='armeabi-v7a'                                                                                             
+export NDK_API='android-21'                                                                                           
+export LDSHARED='/home/bgl/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clan
+g -target armv7a-linux-androideabi21 -fomit-frame-pointer -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -mthumb -fPIC -s
+hared'                                                                                                                
+export BUILDLIB_PATH='/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop/h
+ostpython3/native-build/build/lib.linux-x86_64-3.11'                                                                  
+export PYTHONNOUSERSITE='1'                                                                                           
+export LANG='en_GB.UTF-8'                                                                                             
+export PYTHONPATH='/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop/host
+python3/native-build/Lib:/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/deskto
+p/hostpython3/native-build/Lib/site-packages:/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_build
+s/hostpython3/desktop/hostpython3/native-build/build/temp.linux-x86_64-3.11:/home/bgl/.buildozer/android/platform/buil
+d-armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/build/lib.linux-x86_64-3.11:/home/bgl/.b
+uildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/build/scri
+pts-3.11'                                                                                                             
+export LIBLINK='NOTNONE'                                                                                              
+export COPYLIBS='1'                                                                                                   
+export LIBLINK_PATH='/home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v
+7a__ndk_target_21/objects_pyjnius'                                                                                    
+export NDKPLATFORM='NOTNONE'                                                                                          
+                                                                                                                      
+[INFO]:    COMMAND:
+cd /home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/
+pyjnius && /home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/
+native-build/python3 setup.py build_ext -v                                                                            
+                                                                                                                      
+[WARNING]: ERROR: /home/bgl/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/hostpython3/desktop/hostp
+ython3/native-build/python3 failed!
+# Command failed: ['/home/bgl/kivy_env/bin/python3', '-m', 'pythonforandroid.toolchain', 'create', '--dist_name=mykivy
+app', '--bootstrap=sdl2', '--requirements=python3=3.10.6,kivy,pyjnius\n\n\n\nandroid.permissions = INTERNET', '--arch=
+armeabi-v7a', '--copy-libs', '--color=always', '--storage-dir=/home/bgl/.buildozer/android/platform/build-armeabi-v7a'
+, '--ndk-api=21', '--ignore-setup-py', '--debug']
+# ENVIRONMENT:
+#     SHELL = '/bin/bash'
+#     JAVA_HOME = '/usr/lib/jvm/java-11-openjdk-amd64'
+#     PWD = '/home/bgl'
+#     LOGNAME = 'bgl'
+#     XDG_SESSION_TYPE = 'tty'
+#     ANDROIDNDK = '/home/bgl/.buildozer/android/platform/android-ndk-r25b'
+#     LINES = '47'
+#     HOME = '/home/bgl'
+#     LANG = 'en_US.UTF-8'
+#     LS_COLORS = 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:s
+u=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31
+:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;3
+1:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:
+*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;3
+1:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;
+31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.
+pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;3
+5:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm
+=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rm
+vb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.c
+gm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:
+*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;
+36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;
+90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=
+00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:'
+#     COLUMNS = '118'
+#     SHELLINABOX_REALIP = ''
+#     VIRTUAL_ENV = '/home/bgl/kivy_env'
+#     SHELLINABOX_PEERNAME = '192.168.2.32'
+#     LESSCLOSE = '/usr/bin/lesspipe %s %s'
+#     XDG_SESSION_CLASS = 'user'
+#     TERM = 'xterm'
+#     LESSOPEN = '| /usr/bin/lesspipe %s'
+#     USER = 'bgl'
+#     SHLVL = '1'
+#     XDG_SESSION_ID = '109'
+#     VIRTUAL_ENV_PROMPT = '(kivy_env) '
+#     XDG_RUNTIME_DIR = '/run/user/1000'
+#     PS1 = ('(kivy_env) \\[\\e]0;\\u@\\h: '
+ '\\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$ ')
+#     DEBUGINFOD_URLS = 'https://debuginfod.ubuntu.com '
+#     ANDROIDSDK = '/home/bgl/.buildozer/android/platform/android-sdk'
+#     XDG_DATA_DIRS = '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+#     HUSHLOGIN = 'FALSE'
+#     PATH = '/home/bgl/.buildozer/android/platform/apache-ant-1.9.4/bin:/home/bgl/kivy_env/bin:/home/bgl/.local/bin:/
+home/bgl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/
+bgl/.buildozer/android/platform/android-sdk/tools:/home/bgl/.buildozer/android/platform/android-sdk/platform-tools'
+#     DBUS_SESSION_BUS_ADDRESS = 'unix:path=/run/user/1000/bus'
+#     SHELLINABOX_URL = 'https://192.168.2.48:4200/'
+#     MAIL = '/var/mail/bgl'
+#     REMOTEHOST = '192.168.2.32'
+#     _ = '/home/bgl/kivy_env/bin/buildozer'
+#     PACKAGES_PATH = '/home/bgl/.buildozer/android/packages'
+#     ANDROIDAPI = '30'
+#     ANDROIDMINAPI = '21'
+# 
+# Buildozer failed to execute the last command
+# The error might be hidden in the log above this error
+# Please read the full log, and search for it before
+# raising an issue with buildozer itself.
