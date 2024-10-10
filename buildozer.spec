@@ -7,7 +7,7 @@ title = My Kivy App
 package.name = mykivyapp
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.example
+package.domain = org.test
 
 # (str) Source code where the main.py is located
 source.dir = .
@@ -18,7 +18,7 @@ source.main = main.py
 
 # (list) Application requirements
 # Specified dependencies
-requirements = python3,kivy
+requirements = python3=3.10.6,kivy,pyjnius
 
 # (str) Presplash of the application
 #presplash.filename = %(source.dir)s/data/presplash.png
@@ -27,8 +27,8 @@ requirements = python3,kivy
 #icon.filename = %(source.dir)s/data/icon.png
 
 # (list) Permissions
-# Jeśli aplikacja wymaga specjalnych uprawnień, dodaj je tutaj
-# android.permissions = INTERNET
+# Jeśli aplikacja wymaga specjalnych uprawnień, dodaj je tutaj # !
+ android.permissions = INTERNET
 
 
 # (bool) Indicate if the application should be fullscreen or not
@@ -81,7 +81,7 @@ osx.kivy_version = 1.9.1
 #
 # Android specific
 #
-targets = android
+android.target = 30
 # (bool) Indicate if the application should be fullscreen or not
 #fullscreen = 0
 
@@ -110,29 +110,28 @@ targets = android
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-android.api = 31
-android.minapi = 27
+android.api = 30
 
 # (int) Minimum API your APK / AAB will support.
 #android.minapi = 21
 
-# (int) Android SDK version to use
-#android.sdk = 20
+# (int) Android SDK version to use //to jest deprecated
+android.sdk = 30
 
-# (str) Android NDK version to use
-#android.ndk = 23b
+# (str) Android NDK version to use min.25b
+android.ndk = 25b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-#android.ndk_api = 21
+android.ndk_api = 21
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
-#android.private_storage = True
+android.private_storage = True
 
-# (str) Android NDK directory (if empty, it will be automatically downloaded.)
-#android.ndk_path =
+# (str) Android NDK directory (if empty, it will be automatically downloaded.) !
+#android.ndk_path = /home/bgl/.buildozer/android/platform/android-ndk-r25b
 
-# (str) Android SDK directory (if empty, it will be automatically downloaded.)
-#android.sdk_path =
+# (str) Android SDK directory (if empty, it will be automatically downloaded.) !
+#android.sdk_path = /home/bgl/.buildozer/android/platform/android-sdk
 
 # (str) ANT directory (if empty, it will be automatically downloaded.)
 #android.ant_path =
@@ -145,8 +144,8 @@ android.minapi = 27
 # (bool) If True, then automatically accept SDK license
 # agreements. This is intended for automation only. If set to False,
 # the default, you will be shown the license when first running
-# buildozer.
-# android.accept_sdk_license = False
+# buildozer. ! #false
+ android.accept_sdk_license = True
 
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.kivy.android.PythonActivity
@@ -210,8 +209,8 @@ android.minapi = 27
 # android.add_resources = legal_resources
 #android.add_resources =
 
-# (list) Gradle dependencies to add
-#android.gradle_dependencies =
+# (list) Gradle dependencies to add ! #
+android.gradle_dependencies = 'androidx.core:core:1.6.0', 'androidx.appcompat:appcompat:1.3.1'
 
 # (bool) Enable AndroidX support. Enable when 'android.gradle_dependencies'
 # contains an 'androidx' package, or any package from Kotlin source.
@@ -293,7 +292,7 @@ android.minapi = 27
 
 # (list) The Android archs to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 # In past, was `android.arch` as we weren't supporting builds for multiple archs at the same time.
-android.archs = arm64-v8a, armeabi-v7a
+android.archs = armeabi-v7a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
@@ -330,8 +329,8 @@ android.allow_backup = True
 # (str) python-for-android fork to use in case if p4a.url is not specified, defaults to upstream (kivy)
 #p4a.fork = kivy
 
-# (str) python-for-android branch to use, defaults to master
-#p4a.branch = master
+# (str) python-for-android branch to use, defaults to master ! #
+p4a.branch = master
 
 # (str) python-for-android specific commit to use, defaults to HEAD, must be within p4a.branch
 #p4a.commit = HEAD
